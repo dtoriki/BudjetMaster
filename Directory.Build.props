@@ -1,0 +1,48 @@
+<Project ToolsVersion="latest" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir Condition="'$(SolutionDir)' == ''">$(MSBuildThisFileDirectory.TrimEnd('\').TrimEnd('/'))\</SolutionDir>
+    <NoLogo>true</NoLogo>
+    <Authors>SmileTechStudy</Authors>
+
+    <SuppressNETCoreSdkPreviewMessage>false</SuppressNETCoreSdkPreviewMessage>
+    <EnablePreviewFeatures>false</EnablePreviewFeatures>
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <Features>strict;pdb-path-determinism</Features>
+    <NoPackageAnalysis>false</NoPackageAnalysis>
+
+    <DefaultLanguage>ru-RU</DefaultLanguage>
+    <SatelliteResourceLanguages>ru</SatelliteResourceLanguages>
+
+    <NoWarn>CS0067</NoWarn>
+    <GenerateFullPaths Condition="'$(TERM_PROGRAM)' == 'vscode'">true</GenerateFullPaths>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(IDEA_INITIAL_DIRECTORY)' == ''">
+    <Deterministic>true</Deterministic>
+    <DeterministicSourcePaths>true</DeterministicSourcePaths>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <PathMap>'$(SolutionDir)'=/_/</PathMap>
+  </PropertyGroup>
+  <ItemGroup Condition="$(DeterministicSourcePaths) == 'true'">
+    <SourceRoot Include="$(MSBuildThisFileDirectory)/"/>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <OutputPath>$(SolutionDir)artifacts\src\$(Configuration)\bin</OutputPath>
+    <BaseIntermediateOutputPath>$(SolutionDir)artifacts\src\$(Configuration)\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <PackageOutputPath>$(SolutionDir)artifacts\src\$(Configuration)\nupkg</PackageOutputPath>
+
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+  
+</Project>
