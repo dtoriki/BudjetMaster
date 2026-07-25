@@ -342,3 +342,4 @@ healthchecksdb
 /artifacts/
 /.vs/
 
+/src/Migrations/Migrations/BudjetMasterDbContextModelSnapshot.cs

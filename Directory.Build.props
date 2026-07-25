@@ -8,7 +8,7 @@
   <PropertyGroup>
     <SolutionDir Condition="'$(SolutionDir)' == ''">$(MSBuildThisFileDirectory.TrimEnd('\').TrimEnd('/'))\</SolutionDir>
     <NoLogo>true</NoLogo>
-    <Authors>SmileTechStudy</Authors>
+    <Authors>DToriki</Authors>
 
     <SuppressNETCoreSdkPreviewMessage>false</SuppressNETCoreSdkPreviewMessage>
     <EnablePreviewFeatures>false</EnablePreviewFeatures>

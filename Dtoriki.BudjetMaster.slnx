@@ -1,3 +1,23 @@
 <Solution>
+  <Folder Name="/docs/">
+    <File Path="docs/architecture.md" />
+    <File Path="docs/domain-model.md" />
+    <File Path="docs/roadmap.md" />
+    <File Path="docs/user-flows.md" />
+  </Folder>
+  <Folder Name="/items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="CLAUDE.md" />
+    <File Path="Directory.Build.props" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
   <Folder Name="/src/" />
+  <Folder Name="/tools/">
+    <Project Path="tools/MigrationHelp/MigrationHelp.csproj" />
+    <Project Path="tools/MigrationHelp.Common/MigrationHelp.Common.csproj" />
+    <Project Path="tools/MigrationHelp.Design/MigrationHelp.Design.csproj" />
+  </Folder>
 </Solution>
