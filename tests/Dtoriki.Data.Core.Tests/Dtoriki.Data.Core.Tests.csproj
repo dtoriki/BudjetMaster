@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\libs\Dtoriki.Data.Core\Dtoriki.Data.Core.csproj" />
+  </ItemGroup>
+
+</Project>

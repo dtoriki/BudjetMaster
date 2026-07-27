@@ -11,10 +11,20 @@
     <File Path=".gitignore" />
     <File Path="CLAUDE.md" />
     <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
     <File Path="LICENSE" />
     <File Path="README.md" />
   </Folder>
   <Folder Name="/src/" />
+  <Folder Name="/src/libs/">
+    <Project Path="src/libs/Dtoriki.Data.Core/Dtoriki.Data.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Dtoriki.Data.Core.Tests/Dtoriki.Data.Core.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/items/">
+    <File Path="tests/Directory.Build.props" />
+  </Folder>
   <Folder Name="/tools/">
     <Project Path="tools/MigrationHelp/MigrationHelp.csproj" />
     <Project Path="tools/MigrationHelp.Common/MigrationHelp.Common.csproj" />
