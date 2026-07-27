@@ -3,6 +3,9 @@
   <Folder Name="/docs/architecture/">
     <File Path="docs/architecture/auth-server.md" />
   </Folder>
+  <Folder Name="/docs/src/">
+    <File Path="docs/src/README.md" />
+  </Folder>
   <Folder Name="/items/">
     <File Path=".editorconfig" />
     <File Path=".gitattributes" />
